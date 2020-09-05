@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 app.use(express.static("static"));
-mongoose.connect(proces.env.MONGODB_CONNECT, {
+mongoose.connect(process.env.MONGODB_CONNECT, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false,
